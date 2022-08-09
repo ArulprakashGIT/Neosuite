@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="ObjectRepositoryNeosuite.NeosuiteListeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="p05_setting.TC2_ThemeSettings">
+        <methods>
+          <include name="themeSetting"/>
+        </methods>
+      </class> <!-- p05_setting.TC2_ThemeSettings -->
+      <class name="p04_delegate.TC03_MailTriggerDelegation">
+        <methods>
+          <include name="cancel"/>
+          <include name="mailTriggerDelegation"/>
+        </methods>
+      </class> <!-- p04_delegate.TC03_MailTriggerDelegation -->
+      <class name="p03_Proxy.TC1ProxyUser">
+        <methods>
+          <include name="proxyUser"/>
+        </methods>
+      </class> <!-- p03_Proxy.TC1ProxyUser -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

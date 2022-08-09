@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+   <listener class-name="ObjectRepositoryNeosuite.NeosuiteListeners"/>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="p01_login_Non_SSO.TC01_ValidEmployeeid_Validpasswod"/>
+      <class name="p01_login_Non_SSO.TC02_InvalidEmployeeid_Invalidpassword"/>
+      <class name="p01_login_Non_SSO.TC03_validEmployeeid_Invalidpassword"/>
+      <class name="p01_login_Non_SSO.TC04_InvalidEmployeeid_ValidPassword"/>
+      <class name="p01_login_Non_SSO.TC05_validGlobalid_validpassword"/>
+      <class name="p01_login_Non_SSO.TC06_InvalidGlobalid_Invalidpassword"/>
+      <class name="p01_login_Non_SSO.TC07_validGlobalid_Invalidpassword"/>
+      <class name="p01_login_Non_SSO.TC08_InvalidGlobalid_ValidPassword"/>
+      <class name="p01_login_Non_SSO.TC13_Remember_me"/>
+      <class name="p01_login_Non_SSO.TC14_Forgotpassword"/>                                                                                                                                                                    
+      <class name="p01_login_Non_SSO.TC15_Back_to_Login"/>
+      <class name="p03_Proxy.TC1ProxyUser"/>
+      <class name="p03_Proxy.TC2ProxyWithoutKeyingUser"/>
+      <class name="p03_Proxy.TC3ResetButtonProxy"/>
+      <class name="p03_Proxy.TC4CloseButtonProxy"/>
+      <class name="p04_delegate.TC01_DelegatePageOpen"/>
+      <class name="p04_delegate.TC02_CreateDelegation"/>
+      <class name="p04_delegate.TC03_MailTriggerDelegation"/>
+      <class name="p04_delegate.TC04_PastDateCreateDelegation"/>
+      <class name="p04_delegate.TC05_CreateDelegationWithoutMandatory"/>
+      <class name="p04_delegate.TC06_ResetDelegate"/>
+      <class name="p04_delegate.TC07_ClosebuttonDelegateTo"/>
+      <class name="p04_delegate.TC08_DelegateHistoryOnme"/>
+      <class name="p04_delegate.TC09_DelegateHistoryByme"/>
+      <class name="p04_delegate.TC10_DelegationOnme"/>
+      <class name="p04_delegate.TC11_DelegationByme"/>
+      <class name="p04_delegate.TC12_EndDelegation"/>
+      <class name="p04_delegate.TC13_cancelEndDelegation"/>
+      <class name="p04_delegate.TC14_DelegateTabSwitch"/>
+      <class name="p04_delegate.TC15OopsNoDelegations"/>
+      <class name="p04_delegate.TC16DelegatePageClose"/>
+      <class name="p05_setting.TC1_SettingPageOpen"/>
+      <class name="p05_setting.TC2_ThemeSettings"/>
+      <class name="p05_setting.TC3_SettingLanguage"/>
+      <class name="p05_setting.TC6_SettingPageClose"/>
+      <class name="p06_Profile_Tab.TC01_Profile_tab_open"/>
+      <class name="p06_Profile_Tab.TC02_Approle_open"/>
+      <class name="p06_Profile_Tab.TC03_Switch_Role"/>
+      <class name="p06_Profile_Tab.TC04_Toggle_Freeze"/>
+      <class name="p06_Profile_Tab.TC05_Profile_tab_close"/>
+      <class name="p07_widgetview.TC1_OpenWidget"/>
+      <class name="p07_widgetview.TC2_SwitchAllApplicationRecent"/>
+      <class name="p09_Search.TC01_Search_Widget"/>
+      <class name="p09_Search.TC02_Search_close"/>
+      <class name="p10_notification.TC01_Open_notificationpage"/>
+      <class name="p10_notification.TC02_Switch_Application_notification"/>
+      <class name="p10_notification.TC03_FilterNotification"/>
+      <class name="p10_notification.TC04_ResetFilterNotification"/>
+      <class name="p10_notification.TC05_SearchNotification"/>
+      <class name="p10_notification.TC06_NoNotifications"/>
+      <class name="p10_notification.TC07_Closenotification"/>
+      <class name="p11_logout.TC01_Logout"/>   
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

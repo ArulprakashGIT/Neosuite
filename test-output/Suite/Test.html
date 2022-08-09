@@ -1,0 +1,468 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>49/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 09 12:29:10 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>926 seconds (926753 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='p04_delegate.TC03_MailTriggerDelegation.mailTriggerDelegation()'><b>mailTriggerDelegation</b><br>Test class: p04_delegate.TC03_MailTriggerDelegation</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;i0118&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;NWCHNLAP003&apos;, ip: &apos;192.168.51.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ET1198\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63902}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63902/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b1363f77279f7f08c90bdcdd8461cb01
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at p04_delegate.TC03_MailTriggerDelegation.mailTriggerDelegation(TC03_MailTriggerDelegation.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace593185514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace593185514'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@id=&apos;i0118&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;NWCHNLAP003&apos;, ip: &apos;192.168.51.142&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ET1198\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:63902}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63902/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b1363f77279f7f08c90bdcdd8461cb01
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at p04_delegate.TC03_MailTriggerDelegation.mailTriggerDelegation(TC03_MailTriggerDelegation.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>84</td>
+<td>p04_delegate.TC03_MailTriggerDelegation@7975d1d8</td></tr>
+<tr>
+<td title='p05_setting.TC2_ThemeSettings.themeSetting()'><b>themeSetting</b><br>Test class: p05_setting.TC2_ThemeSettings</td>
+<td><div><pre>java.lang.AssertionError: expected [#28d79e] but found [#007ee5]
+	at p05_setting.TC2_ThemeSettings.themeSetting(TC2_ThemeSettings.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1815196688", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1815196688'><pre>java.lang.AssertionError: expected [#28d79e] but found [#007ee5]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at p05_setting.TC2_ThemeSettings.themeSetting(TC2_ThemeSettings.java:34)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>p05_setting.TC2_ThemeSettings@32115b28</td></tr>
+<tr>
+<td title='p03_Proxy.TC1ProxyUser.proxyUser()'><b>proxyUser</b><br>Test class: p03_Proxy.TC1ProxyUser</td>
+<td><div><pre>java.lang.AssertionError: Test case failed-Proxy widget failed expected [false] but found [true]
+	at p03_Proxy.TC1ProxyUser.proxyUser(TC1ProxyUser.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace265845794", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace265845794'><pre>java.lang.AssertionError: Test case failed-Proxy widget failed expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:819)
+	at p03_Proxy.TC1ProxyUser.proxyUser(TC1ProxyUser.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>55</td>
+<td>p03_Proxy.TC1ProxyUser@45385f75</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='p04_delegate.TC13_cancelEndDelegation.cancelEndDelegation()'><b>cancelEndDelegation</b><br>Test class: p04_delegate.TC13_cancelEndDelegation</td>
+<td></td>
+<td>11</td>
+<td>p04_delegate.TC13_cancelEndDelegation@6cc4cdb9</td></tr>
+<tr>
+<td title='p01_login_Non_SSO.TC05_validGlobalid_validpassword.validGlobalid_validpassword()'><b>validGlobalid_validpassword</b><br>Test class: p01_login_Non_SSO.TC05_validGlobalid_validpassword</td>
+<td></td>
+<td>7</td>
+<td>p01_login_Non_SSO.TC05_validGlobalid_validpassword@23941fb4</td></tr>
+<tr>
+<td title='p03_Proxy.TC4CloseButtonProxy.closeButtonProxy()'><b>closeButtonProxy</b><br>Test class: p03_Proxy.TC4CloseButtonProxy</td>
+<td></td>
+<td>10</td>
+<td>p03_Proxy.TC4CloseButtonProxy@69ee81fc</td></tr>
+<tr>
+<td title='p04_delegate.TC11_DelegationByme.delegationByme()'><b>delegationByme</b><br>Test class: p04_delegate.TC11_DelegationByme</td>
+<td></td>
+<td>10</td>
+<td>p04_delegate.TC11_DelegationByme@e3b3b2f</td></tr>
+<tr>
+<td title='p05_setting.TC6_SettingPageClose.settingPageClose()'><b>settingPageClose</b><br>Test class: p05_setting.TC6_SettingPageClose</td>
+<td></td>
+<td>11</td>
+<td>p05_setting.TC6_SettingPageClose@6bb4dd34</td></tr>
+<tr>
+<td title='p10_notification.TC07_Closenotification.closeNotification()'><b>closeNotification</b><br>Test class: p10_notification.TC07_Closenotification</td>
+<td></td>
+<td>14</td>
+<td>p10_notification.TC07_Closenotification@a8ef162</td></tr>
+<tr>
+<td title='p04_delegate.TC07_ClosebuttonDelegateTo.closeButtonDelegateTo()'><b>closeButtonDelegateTo</b><br>Test class: p04_delegate.TC07_ClosebuttonDelegateTo</td>
+<td></td>
+<td>18</td>
+<td>p04_delegate.TC07_ClosebuttonDelegateTo@64b0598</td></tr>
+<tr>
+<td title='p01_login_Non_SSO.TC07_validGlobalid_Invalidpassword.validGlobalid_Invalidpassword()'><b>validGlobalid_Invalidpassword</b><br>Test class: p01_login_Non_SSO.TC07_validGlobalid_Invalidpassword</td>
+<td></td>
+<td>7</td>
+<td>p01_login_Non_SSO.TC07_validGlobalid_Invalidpassword@660acfb</td></tr>
+<tr>
+<td title='p01_login_Non_SSO.TC02_InvalidEmployeeid_Invalidpassword.invalidEmployeeid_Invalidpassword()'><b>invalidEmployeeid_Invalidpassword</b><br>Test class: p01_login_Non_SSO.TC02_InvalidEmployeeid_Invalidpassword</td>
+<td></td>
+<td>7</td>
+<td>p01_login_Non_SSO.TC02_InvalidEmployeeid_Invalidpassword@465232e9</td></tr>
+<tr>
+<td title='p04_delegate.TC01_DelegatePageOpen.delegatePageOpen()'><b>delegatePageOpen</b><br>Test class: p04_delegate.TC01_DelegatePageOpen</td>
+<td></td>
+<td>12</td>
+<td>p04_delegate.TC01_DelegatePageOpen@6e2aa843</td></tr>
+<tr>
+<td title='p05_setting.TC3_SettingLanguage.settingLanguage()'><b>settingLanguage</b><br>Test class: p05_setting.TC3_SettingLanguage</td>
+<td></td>
+<td>17</td>
+<td>p05_setting.TC3_SettingLanguage@2ad48653</td></tr>
+<tr>
+<td title='p10_notification.TC02_Switch_Application_notification.switchApplicationNotification()'><b>switchApplicationNotification</b><br>Test class: p10_notification.TC02_Switch_Application_notification</td>
+<td></td>
+<td>11</td>
+<td>p10_notification.TC02_Switch_Application_notification@5f9edf14</td></tr>
+<tr>
+<td title='p04_delegate.TC10_DelegationOnme.delegationOnme()'><b>delegationOnme</b><br>Test class: p04_delegate.TC10_DelegationOnme</td>
+<td></td>
+<td>9</td>
+<td>p04_delegate.TC10_DelegationOnme@50029372</td></tr>
+<tr>
+<td title='p01_login_Non_SSO.TC06_InvalidGlobalid_Invalidpassword.invalidGlobalid_Invalidpassword()'><b>invalidGlobalid_Invalidpassword</b><br>Test class: p01_login_Non_SSO.TC06_InvalidGlobalid_Invalidpassword</td>
+<td></td>
+<td>6</td>
+<td>p01_login_Non_SSO.TC06_InvalidGlobalid_Invalidpassword@7486b455</td></tr>
+<tr>
+<td title='p06_Profile_Tab.TC02_Approle_open.Approle_open()'><b>Approle_open</b><br>Test class: p06_Profile_Tab.TC02_Approle_open</td>
+<td></td>
+<td>11</td>
+<td>p06_Profile_Tab.TC02_Approle_open@45efd90f</td></tr>
+<tr>
+<td title='p06_Profile_Tab.TC05_Profile_tab_close.Profile_tab_close()'><b>Profile_tab_close</b><br>Test class: p06_Profile_Tab.TC05_Profile_tab_close</td>
+<td></td>
+<td>9</td>
+<td>p06_Profile_Tab.TC05_Profile_tab_close@3214ee6</td></tr>
+<tr>
+<td title='p07_widgetview.TC2_SwitchAllApplicationRecent.switchAllApplicationRecent()'><b>switchAllApplicationRecent</b><br>Test class: p07_widgetview.TC2_SwitchAllApplicationRecent</td>
+<td></td>
+<td>9</td>
+<td>p07_widgetview.TC2_SwitchAllApplicationRecent@4a07d605</td></tr>
+<tr>
+<td title='p10_notification.TC06_NoNotifications.noNotifications()'><b>noNotifications</b><br>Test class: p10_notification.TC06_NoNotifications</td>
+<td></td>
+<td>13</td>
+<td>p10_notification.TC06_NoNotifications@41488b16</td></tr>
+<tr>
+<td title='p10_notification.TC04_ResetFilterNotification.filterNotification()'><b>filterNotification</b><br>Test class: p10_notification.TC04_ResetFilterNotification</td>
+<td></td>
+<td>13</td>
+<td>p10_notification.TC04_ResetFilterNotification@2f01783a</td></tr>
+<tr>
+<td title='p05_setting.TC1_SettingPageOpen.settingPageOpen()'><b>settingPageOpen</b><br>Test class: p05_setting.TC1_SettingPageOpen</td>
+<td></td>
+<td>10</td>
+<td>p05_setting.TC1_SettingPageOpen@5038d0b5</td></tr>
+<tr>
+<td title='p01_login_Non_SSO.TC13_Remember_me.remember_Me()'><b>remember_Me</b><br>Test class: p01_login_Non_SSO.TC13_Remember_me</td>
+<td></td>
+<td>9</td>
+<td>p01_login_Non_SSO.TC13_Remember_me@5efa40fe</td></tr>
+<tr>
+<td title='p07_widgetview.TC1_OpenWidget.openWidget()'><b>openWidget</b><br>Test class: p07_widgetview.TC1_OpenWidget</td>
+<td></td>
+<td>18</td>
+<td>p07_widgetview.TC1_OpenWidget@383dc82c</td></tr>
+<tr>
+<td title='p06_Profile_Tab.TC01_Profile_tab_open.Profile_tab_open()'><b>Profile_tab_open</b><br>Test class: p06_Profile_Tab.TC01_Profile_tab_open</td>
+<td></td>
+<td>11</td>
+<td>p06_Profile_Tab.TC01_Profile_tab_open@7d9f158f</td></tr>
+<tr>
+<td title='p03_Proxy.TC3ResetButtonProxy.resetButtonProxy()'><b>resetButtonProxy</b><br>Test class: p03_Proxy.TC3ResetButtonProxy</td>
+<td></td>
+<td>14</td>
+<td>p03_Proxy.TC3ResetButtonProxy@2d29b4ee</td></tr>
+<tr>
+<td title='p04_delegate.TC12_EndDelegation.EndDelegation()'><b>EndDelegation</b><br>Test class: p04_delegate.TC12_EndDelegation</td>
+<td></td>
+<td>71</td>
+<td>p04_delegate.TC12_EndDelegation@50f6ac94</td></tr>
+<tr>
+<td title='p04_delegate.TC14_DelegateTabSwitch.delegateHistoryTabSwitch()'><b>delegateHistoryTabSwitch</b><br>Test class: p04_delegate.TC14_DelegateTabSwitch</td>
+<td></td>
+<td>13</td>
+<td>p04_delegate.TC14_DelegateTabSwitch@28194a50</td></tr>
+<tr>
+<td title='p10_notification.TC03_FilterNotification.filterNotification()'><b>filterNotification</b><br>Test class: p10_notification.TC03_FilterNotification</td>
+<td></td>
+<td>11</td>
+<td>p10_notification.TC03_FilterNotification@68746f22</td></tr>
+<tr>
+<td title='p06_Profile_Tab.TC03_Switch_Role.Switch_Role()'><b>Switch_Role</b><br>Test class: p06_Profile_Tab.TC03_Switch_Role</td>
+<td></td>
+<td>15</td>
+<td>p06_Profile_Tab.TC03_Switch_Role@4b8729ff</td></tr>
+<tr>
+<td title='p06_Profile_Tab.TC04_Toggle_Freeze.Toggle_Freeze()'><b>Toggle_Freeze</b><br>Test class: p06_Profile_Tab.TC04_Toggle_Freeze</td>
+<td></td>
+<td>11</td>
+<td>p06_Profile_Tab.TC04_Toggle_Freeze@61710c6</td></tr>
+<tr>
+<td title='p04_delegate.TC05_CreateDelegationWithoutMandatory.createDelegationWithoutMandatory()'><b>createDelegationWithoutMandatory</b><br>Test class: p04_delegate.TC05_CreateDelegationWithoutMandatory</td>
+<td></td>
+<td>16</td>
+<td>p04_delegate.TC05_CreateDelegationWithoutMandatory@24105dc5</td></tr>
+<tr>
+<td title='p04_delegate.TC06_ResetDelegate.resetDelegate()'><b>resetDelegate</b><br>Test class: p04_delegate.TC06_ResetDelegate</td>
+<td></td>
+<td>18</td>
+<td>p04_delegate.TC06_ResetDelegate@5167f57d</td></tr>
+<tr>
+<td title='p04_delegate.TC04_PastDateCreateDelegation.pastDateCreateDelegation()'><b>pastDateCreateDelegation</b><br>Test class: p04_delegate.TC04_PastDateCreateDelegation</td>
+<td></td>
+<td>14</td>
+<td>p04_delegate.TC04_PastDateCreateDelegation@2438dcd</td></tr>
+<tr>
+<td title='p03_Proxy.TC2ProxyWithoutKeyingUser.proxyWithoutkeyinguser()'><b>proxyWithoutkeyinguser</b><br>Test class: p03_Proxy.TC2ProxyWithoutKeyingUser</td>
+<td></td>
+<td>12</td>
+<td>p03_Proxy.TC2ProxyWithoutKeyingUser@49c90a9c</td></tr>
+<tr>
+<td title='p11_logout.TC01_Logout.logout()'><b>logout</b><br>Test class: p11_logout.TC01_Logout</td>
+<td></td>
+<td>14</td>
+<td>p11_logout.TC01_Logout@2eea88a1</td></tr>
+<tr>
+<td title='p04_delegate.TC16DelegatePageClose.delegatePageClose()'><b>delegatePageClose</b><br>Test class: p04_delegate.TC16DelegatePageClose</td>
+<td></td>
+<td>11</td>
+<td>p04_delegate.TC16DelegatePageClose@1a5b6f42</td></tr>
+<tr>
+<td title='p01_login_Non_SSO.TC14_Forgotpassword.forgotPassword()'><b>forgotPassword</b><br>Test class: p01_login_Non_SSO.TC14_Forgotpassword</td>
+<td></td>
+<td>32</td>
+<td>p01_login_Non_SSO.TC14_Forgotpassword@1f9f6368</td></tr>
+<tr>
+<td title='p04_delegate.TC09_DelegateHistoryByme.delegateHistoryByme()'><b>delegateHistoryByme</b><br>Test class: p04_delegate.TC09_DelegateHistoryByme</td>
+<td></td>
+<td>10</td>
+<td>p04_delegate.TC09_DelegateHistoryByme@3e2055d6</td></tr>
+<tr>
+<td title='p04_delegate.TC15OopsNoDelegations.opsNoDelegations()'><b>opsNoDelegations</b><br>Test class: p04_delegate.TC15OopsNoDelegations</td>
+<td></td>
+<td>9</td>
+<td>p04_delegate.TC15OopsNoDelegations@7f2cfe3f</td></tr>
+<tr>
+<td title='p09_Search.TC02_Search_close.searchClose()'><b>searchClose</b><br>Test class: p09_Search.TC02_Search_close</td>
+<td></td>
+<td>14</td>
+<td>p09_Search.TC02_Search_close@7d7758be</td></tr>
+<tr>
+<td title='p09_Search.TC01_Search_Widget.searchWidget()'><b>searchWidget</b><br>Test class: p09_Search.TC01_Search_Widget</td>
+<td></td>
+<td>14</td>
+<td>p09_Search.TC01_Search_Widget@74287ea3</td></tr>
+<tr>
+<td title='p04_delegate.TC02_CreateDelegation.createDelegation()'><b>createDelegation</b><br>Test class: p04_delegate.TC02_CreateDelegation</td>
+<td></td>
+<td>24</td>
+<td>p04_delegate.TC02_CreateDelegation@29f7cefd</td></tr>
+<tr>
+<td title='p04_delegate.TC08_DelegateHistoryOnme.delegateHistoryOnme()'><b>delegateHistoryOnme</b><br>Test class: p04_delegate.TC08_DelegateHistoryOnme</td>
+<td></td>
+<td>12</td>
+<td>p04_delegate.TC08_DelegateHistoryOnme@18f8cd79</td></tr>
+<tr>
+<td title='p01_login_Non_SSO.TC04_InvalidEmployeeid_ValidPassword.invalidEmployeeid_ValidPassword()'><b>invalidEmployeeid_ValidPassword</b><br>Test class: p01_login_Non_SSO.TC04_InvalidEmployeeid_ValidPassword</td>
+<td></td>
+<td>6</td>
+<td>p01_login_Non_SSO.TC04_InvalidEmployeeid_ValidPassword@1df8da7a</td></tr>
+<tr>
+<td title='p01_login_Non_SSO.TC15_Back_to_Login.back_To_Login()'><b>back_To_Login</b><br>Test class: p01_login_Non_SSO.TC15_Back_to_Login</td>
+<td></td>
+<td>6</td>
+<td>p01_login_Non_SSO.TC15_Back_to_Login@1c9b0314</td></tr>
+<tr>
+<td title='p01_login_Non_SSO.TC03_validEmployeeid_Invalidpassword.validEmployeeid_Invalidpassword()'><b>validEmployeeid_Invalidpassword</b><br>Test class: p01_login_Non_SSO.TC03_validEmployeeid_Invalidpassword</td>
+<td></td>
+<td>6</td>
+<td>p01_login_Non_SSO.TC03_validEmployeeid_Invalidpassword@798162bc</td></tr>
+<tr>
+<td title='p10_notification.TC05_SearchNotification.filterNotification()'><b>filterNotification</b><br>Test class: p10_notification.TC05_SearchNotification</td>
+<td></td>
+<td>14</td>
+<td>p10_notification.TC05_SearchNotification@68878f6d</td></tr>
+<tr>
+<td title='p01_login_Non_SSO.TC01_ValidEmployeeid_Validpasswod.validEmployeeid_Validpasswod()'><b>validEmployeeid_Validpasswod</b><br>Test class: p01_login_Non_SSO.TC01_ValidEmployeeid_Validpasswod</td>
+<td></td>
+<td>13</td>
+<td>p01_login_Non_SSO.TC01_ValidEmployeeid_Validpasswod@5a7fe64f</td></tr>
+<tr>
+<td title='p10_notification.TC01_Open_notificationpage.openNotificationPage()'><b>openNotificationPage</b><br>Test class: p10_notification.TC01_Open_notificationpage</td>
+<td></td>
+<td>12</td>
+<td>p10_notification.TC01_Open_notificationpage@2bdd8394</td></tr>
+<tr>
+<td title='p01_login_Non_SSO.TC08_InvalidGlobalid_ValidPassword.invalidGlobalid_ValidPassword()'><b>invalidGlobalid_ValidPassword</b><br>Test class: p01_login_Non_SSO.TC08_InvalidGlobalid_ValidPassword</td>
+<td></td>
+<td>6</td>
+<td>p01_login_Non_SSO.TC08_InvalidGlobalid_ValidPassword@5d908d47</td></tr>
+</table><p>
+</body>
+</html>
